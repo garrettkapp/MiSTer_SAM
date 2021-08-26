@@ -55,7 +55,7 @@ listenmouse="Yes"
 listenkeyboard="Yes"
 listenjoy="Yes"
 branch="main"
-mbcurl="releases/download/untagged-aaa53a9a8abc6f84c412/mbc"
+mbcurl="blob/master/mbc_v03"
 
 # ======== TTY2OLED =======
 ttyenable="No"
@@ -734,7 +734,7 @@ function get_samstuff() { #get_samstuff file (path)
 }
 
 function get_mbc() {
-	REPOSITORY_URL="https://github.com/pocomane/MiSTer_Batch_Control"
+	REPOSITORY_URL="https://github.com/mrchrisster/MiSTer_Batch_Control"
 	echo " Downloading mbc - a tool needed for launching roms..."
 	echo " Created for MiSTer by pocomane"
 	echo " ${REPOSITORY_URL}"
