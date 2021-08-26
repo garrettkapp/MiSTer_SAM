@@ -55,7 +55,7 @@ listenmouse="Yes"
 listenkeyboard="Yes"
 listenjoy="Yes"
 branch="main"
-mbcurl="blob/master/mbc_v05"
+mbcurl="releases/download/untagged-aaa53a9a8abc6f84c412/mbc"
 
 # ======== TTY2OLED =======
 ttyenable="No"
@@ -718,7 +718,7 @@ function get_samstuff() { #get_samstuff file (path)
 		filepath="${mrsampath}"
 	fi
 
-	REPOSITORY_URL="https://github.com/mrchrisster/MiSTer_SAM"
+	REPOSITORY_URL="https://github.com/garrettkapp/MiSTer_SAM"
 		echo -n " Downloading from ${REPOSITORY_URL}/blob/${branch}/${1} to ${filepath}/..."
 	curl_download "/tmp/${1##*/}" "${REPOSITORY_URL}/blob/${branch}/${1}?raw=true"
 
@@ -734,7 +734,7 @@ function get_samstuff() { #get_samstuff file (path)
 }
 
 function get_mbc() {
-	REPOSITORY_URL="https://github.com/mrchrisster/MiSTer_Batch_Control"
+	REPOSITORY_URL="https://github.com/pocomane/MiSTer_Batch_Control"
 	echo " Downloading mbc - a tool needed for launching roms..."
 	echo " Created for MiSTer by pocomane"
 	echo " ${REPOSITORY_URL}"
